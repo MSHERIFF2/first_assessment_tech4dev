@@ -152,15 +152,32 @@
 }
 .event-card{
     
-    margin: 10px;
+    margin: 20px;
     width: 30%;
     border-radius: 10px;
     box-shadow: 1px 1px 8px rgba(204, 169, 228, 0.5);
    
     
 }
-.event-card h3, .event-card span, .event-card p{
-    margin: 20px;
+.event-card h3{
+    font-weight: bolder;
+    font-family: Arial;
+    font-size: 16px;
+    margin: 15px;
+    text-align: center;
+    
+}
+.event-card span{
+    color: purple;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.event-card p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    padding: 20px;
+    text-align: justify;
+   
 }
 .images{
     border-top-right-radius: 10px ;
@@ -169,6 +186,7 @@
     height: auto;
     margin: auto;
     display: block;
+    margin-top: 17px;
 }
 
 .view{
@@ -186,12 +204,12 @@
     .event-container{
         display:flex;
         flex-direction: column;
-        /* border: 2px solid red; */
+        max-width: 100%;
     }
     .event-card{
         /* border: 2px solid orange; */
         margin: 2px;
-        width: 100%;      
+        width: 80%;      
         
     }
     .header{
