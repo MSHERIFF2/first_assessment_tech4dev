@@ -48,18 +48,26 @@ for (let i = 1; i < productServiceLength.length; i++) {
         const p = document.createElement('p');
         const view = document.createElement('p');
         const image = document.createElement('img');
-// given nodeElement className
+        // given nodeElement className
         image.className = 'images'
         card.className = 'event-card';
-// change nodeElement value through Attributes
+        // change nodeElement value through Attributes
         h3.innerText = products.title;
         span.innerText = products.category;
         p.innerText = products.description;
         image.src = products.image
         view.innerText = "view Details"
         view.className = "view"
+        view.addEventListener('click', () => {
+            const productId = productService.getProductById(i).then((single) => {
+                single.id
+            })
+            window.location.href = `productDetails.html?id=${productId}`
 
-// Appending nodeElement
+        })
+
+
+        // Appending nodeElement
         card.appendChild(image); // Append the image
         card.appendChild(h3);
         card.appendChild(span);
