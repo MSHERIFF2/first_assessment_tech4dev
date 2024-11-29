@@ -12,7 +12,7 @@ class Product {
 }
 
 // ProductService class
-class ProductService {
+ export class ProductService {
     // Private method to fetch data from API
     async #fetchData(endpoint) {
         const response = await fetch(`https://fakestoreapi.com/${endpoint}`);
@@ -36,7 +36,8 @@ class ProductService {
         await this.#fetchData(`products/${id}`, { method: "DELETE" });
     }
 }
-const productService = new ProductService();
+
+export const productService = new ProductService()
 
 // Get all products
 productService.getProducts().then((products) => console.log(products));
@@ -46,3 +47,4 @@ productService.getProductById(1).then((product) => console.log(product));
 
 // Delete product
 productService.deleteProduct(1).then(() => console.log("Product deleted"));
+
