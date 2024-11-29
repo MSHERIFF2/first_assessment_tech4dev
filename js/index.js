@@ -60,7 +60,7 @@ for (let i = 1; i < productServiceLength.length; i++) {
         view.className = "view"
         view.addEventListener('click', () => {
             const productId = productService.getProductById(i).then((single) => {
-                single.id
+                return single.id
             })
             window.location.href = `productDetails.html?id=${productId}`
 
