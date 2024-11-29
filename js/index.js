@@ -39,12 +39,12 @@ class Product {
 
 export const productService = new ProductService()
 
-// Get all products
-productService.getProducts().then((products) => console.log(products));
+/* // Get all products
+productService.getProducts().then((products) => console.log(products)); */
 
 // Get product by ID
-productService.getProductById(1).then((product) => console.log(product));
+/* productService.getProductById(1).then((product) => console.log(product)); */
 
 // Delete product
-productService.deleteProduct(1).then(() => console.log("Product deleted"));
+/* productService.deleteProduct(1).then(() => console.log("Product deleted")); */
 

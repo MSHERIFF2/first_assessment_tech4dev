@@ -1,7 +1,7 @@
 import { productService } from "/workspaces/first_assessment_tech4dev/js/index.js"
 
 
-/* const container = document.getElementsByClassName('event-container')[0];
+const container = document.querySelector('.event-container');
 
 const card = document.createElement('div');
 card.className = 'event-card';
@@ -12,11 +12,11 @@ const span = document.createElement('span');
 const p = document.createElement('p');
 const view = document.createElement('p');
 const image = document.createElement('img');
- */
+
 
 productService.getProductById(1).then((product) => {
   console.log(product.title)
- /*  h3.innerText = product.title;
+  h3.innerText = product.title;
   span.innerText = product.category;
   p.innerText = product.description;
   image.src = product.image
@@ -28,5 +28,5 @@ productService.getProductById(1).then((product) => {
   card.appendChild(span);
   card.appendChild(p);
   card.appendChild(view);
-  container.appendChild(card); */
+  container.appendChild(card);
 })
