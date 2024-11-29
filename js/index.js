@@ -59,7 +59,8 @@ for (let i = 1; i < productServiceLength.length; i++){
       span.innerText = products.category;
       p.innerText = products.description;
       image.src = products.image
-      view.innerText = products.view
+      view.innerText = "view Details"
+      view.style.color = "purple"
       
       
       card.appendChild(image); // Append the image
