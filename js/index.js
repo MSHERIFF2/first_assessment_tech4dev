@@ -1,5 +1,5 @@
 // Product class
-class Product {
+ class Product {
     constructor(id, title, category, description, image, price, rating) {
         this.id = id;
         this.title = title;
@@ -38,13 +38,37 @@ class Product {
 }
 
 export const productService = new ProductService()
-
-/* // Get all products
-productService.getProducts().then((products) => console.log(products)); */
-
-// Get product by ID
-/* productService.getProductById(1).then((product) => console.log(product)); */
-
-// Delete product
-/* productService.deleteProduct(1).then(() => console.log("Product deleted")); */
-
+const productServiceLength = await productService?.getProducts()
+for (let i = 1; i < productServiceLength.length; i++){
+    productService.getProductById(i).then((products) => {
+        const container = document.querySelector('.event-container');
+      
+      const card = document.createElement('div');
+      card.className = 'event-card';
+      
+      const div = document.createElement('div');
+      const h3 = document.createElement('h3');
+      const span = document.createElement('span');
+      const p = document.createElement('p');
+      const view = document.createElement('p');
+      const image = document.createElement('img');
+      div.className = 'images'
+      
+      console.log(products.title)
+      h3.innerText = products.title;
+      span.innerText = products.category;
+      p.innerText = products.description;
+      image.src = products.image
+      view.innerText = products.view
+      
+      
+      card.appendChild(image); // Append the image
+      card.appendChild(div);
+      card.appendChild(h3);
+      card.appendChild(span);
+      card.appendChild(p);
+      card.appendChild(view);
+      div.appendChild(image)
+      container.appendChild(card);
+      })
+}
