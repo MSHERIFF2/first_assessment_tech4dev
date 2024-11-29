@@ -1,5 +1,5 @@
 // Product class
- class Product {
+class Product {
     constructor(id, title, category, description, image, price, rating) {
         this.id = id;
         this.title = title;
@@ -12,7 +12,7 @@
 }
 
 // ProductService class
- export class ProductService {
+export class ProductService {
     // Private method to fetch data from API
     async #fetchData(endpoint) {
         const response = await fetch(`https://fakestoreapi.com/${endpoint}`);
@@ -39,37 +39,32 @@
 
 export const productService = new ProductService()
 const productServiceLength = await productService?.getProducts()
-for (let i = 1; i < productServiceLength.length; i++){
+for (let i = 1; i < productServiceLength.length; i++) {
     productService.getProductById(i).then((products) => {
         const container = document.querySelector('.event-container');
-      
-      const card = document.createElement('div');
-      card.className = 'event-card';
-      
-      const div = document.createElement('div');
-      const h3 = document.createElement('h3');
-      const span = document.createElement('span');
-      const p = document.createElement('p');
-      const view = document.createElement('p');
-      const image = document.createElement('img');
-      div.className = 'images'
-      
-      console.log(products.title)
-      h3.innerText = products.title;
-      span.innerText = products.category;
-      p.innerText = products.description;
-      image.src = products.image
-      view.innerText = "view Details"
-      view.style.color = "purple"
-      
-      
-      card.appendChild(image); // Append the image
-      card.appendChild(div);
-      card.appendChild(h3);
-      card.appendChild(span);
-      card.appendChild(p);
-      card.appendChild(view);
-      div.appendChild(image)
-      container.appendChild(card);
-      })
+        const card = document.createElement('div');
+        const h3 = document.createElement('h3');
+        const span = document.createElement('span');
+        const p = document.createElement('p');
+        const view = document.createElement('p');
+        const image = document.createElement('img');
+// given nodeElement className
+        image.className = 'images'
+        card.className = 'event-card';
+// change nodeElement value through Attributes
+        h3.innerText = products.title;
+        span.innerText = products.category;
+        p.innerText = products.description;
+        image.src = products.image
+        view.innerText = "view Details"
+        view.className = "view"
+
+// Appending nodeElement
+        card.appendChild(image); // Append the image
+        card.appendChild(h3);
+        card.appendChild(span);
+        card.appendChild(p);
+        card.appendChild(view);
+        container.appendChild(card);
+    })
 }
