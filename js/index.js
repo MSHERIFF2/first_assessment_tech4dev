@@ -12,7 +12,7 @@ class Product {
 }
 
 // ProductService class
-export class ProductService {
+class ProductService {
   // Private method to fetch data from API
   async #fetchData(endpoint) {
     const response = await fetch(`https://fakestoreapi.com/${endpoint}`);
@@ -56,7 +56,7 @@ export class ProductService {
   }
 }
 
-export const productService = new ProductService();
+ const productService = new ProductService();
 
 // Get all products and render them
 async function renderProducts() {
@@ -91,7 +91,7 @@ async function renderProducts() {
       card.appendChild(span);
       card.appendChild(p);
       card.appendChild(view);
-      container.appendChild(card);
+      container?.appendChild(card);
     }
   }
   
@@ -99,3 +99,4 @@ async function renderProducts() {
   
   renderProducts();
 
+export {ProductService}

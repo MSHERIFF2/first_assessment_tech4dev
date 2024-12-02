@@ -1,4 +1,7 @@
+ import { ProductService } from "./index.js";
+
  async function renderSingleProduct() {
+  const productService = new ProductService()
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get("id");
     const product = await productService.getProductById(productId);
