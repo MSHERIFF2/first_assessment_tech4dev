@@ -7,286 +7,71 @@
   </head>
 
   <body>
-    <div class="landing_page flex flex-col mw-full">
-      <div class="row_1 w-full">
-        <div
-          class="rectangle_1 bg-center bg-image bg-cover h-[640px] p-4 items-center justify-between"
-          style="background-image: url(./static/bg.png)"
-        >
-          <div
-            class="nv flex flex-between items-center justify-between bg-[#FFFFFF] opacity-[0.6] rounded-[20px] py-[12px] px-[24px] mx-[64px] my-[50px] w-[1312px] h-[80px]"
-          >
-            <div class="logo w-[186px] h-[56px] p-[8px] gap-[8px]">
-              <h1
-                class="text-[32px] leading-[37.5px] text-[#432361] w-[170px] h-[40px]"
-              >
-                rendezvou
-              </h1>
-            </div>
-            <div
-              class="navbar flex justify-between text-[#432361] w-[600px] h-[52px] items-center"
-            >
-              <li
-                class="w-[100px] h-[20px] p-[8px] gap-[8px] text-[16px] leading-[18.75px] list-none"
-              >
-                Discover
-              </li>
-              <li
-                class="w-[100px] h-[20px] p-[8px] gap-[8px] text-[16px] leading-[18.75px] list-none"
-              >
-                About us
-              </li>
-              <li
-                class="w-[100px] h-[20px] p-[8px] gap-[8px] text-[16px] leading-[18.75px] list-none"
-              >
-                FAQs
-              </li>
-              <li
-                class="w-[100px] h-[20px] p-[8px] gap-[8px] text-[16px] leading-[18.75px] list-none"
-              >
-                Contact us
-              </li>
-            </div>
-            <div
-              class="buttons flex justify-between w-[205px] h-[44px] gap-[24px] items-center"
-            >
-              <button
-                class="w-[80px] h-[36px] p-[8px] gap-[8px] text-[16px] leading-[18.75px] text-[#432361]"
-              >
-                Sign in
-              </button>
-              <button
-                class="w-[120px] h-[44px] rounded-[10px] py-[12px] px-[24px] gap-[8px] text-[16px] leading-[18.75px] text-[#FFFFFF] bg-[#783ead]"
-              >
-                Sign up
-              </button>
-            </div>
+    <div class="w-auto h-auto flex-col">
+      <div class="R1 max-w-screen h-[640px] flex-col py-[12px]" style="background-image: url(./static/bg.png);">
+        <div class="nv bg-[#FFFFFF99] rounded-[20px]
+        h-auto md:h-[80px] my-[25px] mx-[32px]  md:justify-between 
+        py-[12px] px-[24px] md:flex w-auto">
+          <div class="logo-text">
+            <h1 class="text-center text-[#432361] font-bold leading-[37.5px] text-[32px]">rendezvous</h1>
           </div>
-          <div class="downnav flex justify-between w-[1312px] mx-[64px]">
-            <div class="left w-[531px] h-[160px] mt-[228px] ml-[64px]">
-              <p class="text-[32px] text-[#FFFFFF] leading-[37.5px]">
-                Ready to Rock? Discover the Hottest Events Here – Your
-                Calendar's New Best Friend!
-              </p>
-            </div>
-            <div
-              class="right w-[760px] h-[100px] mt-[258px] ml-[200px] rounded-[20px] justify-between px-[24px] bg-[#FFFFFF] flex items-center"
-            >
-              <input
-                type="text"
-                placeholder="search for an event"
-                class="w-[280px] h-[51px] rounded-[10px] p-[16px] gap-[16px] bg-[#FFFFFF] text-[#4F4F4F] text-[16px] leading-[18.75px]"
-              />
-              <select
-                name=""
-                id=""
-                class="w-[160px] h-[35px] rounded-[30px] justify-between py-[8px] px-[16px] text-[16px] leading-[18.75px] text-[#4F4F4F]"
-              >
-                <option value="category">category</option>
-                <option value="">Entertainment</option>
-                <option value="">Poetry</option>
-              </select>
-              <button
-                class="w-[120px] h-[44px] rounded-[10px] py-[12px] px-[24px] gap-[8px] text-[16px] leading-[18.75px] text-[#FFFFFF] bg-[#783ead]"
-              >
-                Search
-              </button>
-            </div>
+          <ul class="list-none  flex-wrap flex items-center 
+          md:w-[900px] w-auto justify-between md:justify-evenly
+          p-[8px] gap-[8px]">
+            <li class="text-[16px] leading-[18.75px] text-[#432361]">Discover</li>
+            <li class="text-[16px] leading-[18.75px] text-[#432361]">About us</li>
+            <li class="text-[16px] leading-[18.75px] text-[#432361]">FAQs</li>
+            <li class="text-[16px] leading-[18.75px] text-[#432361]">Contact us</li>
+          </ul>
+          <div class="button items-center flex justify-center gap-4">
+            <button class="text-[16px] leading-[18.75px] text-[#432361]">sign in</button>
+            <button class="text-[16px] leading-[18.75px] 
+            bg-[#783EAD] rounded-[10px] text-[#FFFFFF] 
+            py-[12px] px-[24px]">sign up</button>
           </div>
         </div>
-      </div>
-      <div class="row_2 w-full flex flex-col">
-        <div class="top-text flex justify-between h-[39px] mt-[64px] ml-[64px]">
-          <h1
-            class="h1 w-[234px] h-[39px] text-[32px] leading-[37.5px] text-[#000000]"
-          >
-            Trending events
-          </h1>
-          <p
-            class="w-[212px] h-[36px] p-[8px] gap-[4px] text-[16px] leading-[18.75px] text-[#432361]"
-          >
-            View all trending events
+        <div class="md:flex justify-between md:mx-[32px] md:my-[32px] 
+        md:absolute md:bottom-0 md:right-0 md:left-0">
+          <p class="text-[#FFFFFF] text-[32px]
+          leading-[37.5px] w-[500px]">Ready to Rock? Discover the Hottest Events Here – 
+            Your Calendar's New Best Friend!
           </p>
-        </div>
-        <div class="next flex justify-evenly mt-[64px]">
-          <div
-            class="col-1 w-[421px] h-[488px] mt-[150px] rounded-[10px] border-[1px] border-[#E0E0E0] bg-[#FFFFFF]"
-          >
-            <div
-              class="bg-image bg-center bg-cover h-[240px] rounded-t-[10px]"
-              style="background-image: url(./static/col-1.jpeg)"
-            ></div>
-            <h2
-              class="h2 w-[140px] h-[20px] mt-[20px] ml-[24px] text-[16px] leading-[18.75px] text-[#000000] font-bold"
-            >
-              ISWIS Live show
-            </h2>
-            <p
-              class="w-[140px] h-[17px] text-[14px] leading-[16.41px] text-[#000000] ml-[24px]"
-            >
-              Sun, Oct 3rd : 6pm
-            </p>
-            <p
-              class="ml-[24px] mt-[20px] w-[373px] h-[85px] text-[14px] leading-[16.41px]"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <a
-              href=""
-              class="ml-[24px] text-[#432361] text-[14px] leading-[16.41px] w-[114px] h-[33px] mt-[22px] p-[8px] gap-[4px]"
-              >view details</a
-            >
+          <div class="bg-[#FFFFFF] text-[#4F4F4F] text-[16px]
+          rounded-[20px] px-[24px] py-[24px] justify-between items-center 
+          h-auto w-auto md:flex">
+            <input type="text" placeholder="search for an event" class="
+            leading-[18.75px] p-[16px] gap-[16px] w-[280px] h-[51px]">
+            <select name="" id="" class="
+            rounded-[30px] justify-between  py-[8px] px-[16px] w-[160px] h-[44px]">
+              <option value="">
+                category
+              </option>
+            </select>
+            <button class="text-[#FFFFFF] bg-[#783EAD] py-[12px]
+            px-[24px] rounded-[10px] text-[16px] h-[44px]
+            w-[120px] gap-[8px] items-center">Search</button>
           </div>
-          <div
-            class="col-2 w-[421px] h-[488px] mt-[150px] ml-[64px] rounded-[10px] border-[1px] border-[#E0E0E0] bg-[#FFFFFF]"
-          >
-            <div
-              class="bg-image bg-top bg-contain h-[240px] rounded-t-[10px]"
-              style="background-image: url(./static/col-2.jpeg)"
-            ></div>
-            <h2
-              class="h2 w-[140px] h-[20px] mt-[20px] ml-[24px] text-[16px] leading-[18.75px] text-[#000000] font-bold"
-            >
-              ISWIS Live show
-            </h2>
-            <p
-              class="w-[140px] h-[17px] text-[14px] leading-[16.41px] text-[#000000] ml-[24px]"
-            >
-              Sun, Oct 3rd : 6pm
-            </p>
-            <p
-              class="ml-[24px] mt-[20px] w-[373px] h-[85px] text-[14px] leading-[16.41px]"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <a
-              href=""
-              class="ml-[24px] text-[#432361] text-[14px] leading-[16.41px] w-[114px] h-[33px] mt-[22px] p-[8px] gap-[4px]"
-              >view details</a
-            >
-          </div>
-          <div
-            class="col-3 w-[421px] h-[488px] mt-[150px] ml-[64px] rounded-[10px] border-[1px] border-[#E0E0E0] bg-[#FFFFFF]"
-          >
-            <div
-              class="bg-image bg-top bg-cover h-[240px] rounded-t-[10px]"
-              style="background-image: url(./static/col-3.jpeg)"
-            ></div>
-            <h2
-              class="h2 w-[140px] h-[20px] mt-[20px] ml-[24px] text-[16px] leading-[18.75px] text-[#000000] font-bold"
-            >
-              ISWIS Live show
-            </h2>
-            <p
-              class="w-[140px] h-[17px] text-[14px] leading-[16.41px] text-[#000000] ml-[24px]"
-            >
-              Sun, Oct 3rd : 6pm
-            </p>
-            <p
-              class="ml-[24px] mt-[20px] w-[373px] h-[85px] text-[14px] leading-[16.41px]"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <a
-              href=""
-              class="ml-[24px] text-[#432361] text-[14px] leading-[16.41px] w-[114px] h-[33px] mt-[22px] p-[8px] gap-[4px]"
-              >view details</a
-            >
-          </div>
+
         </div>
       </div>
-      <div
-        class="row_3 flex w-full mt-[34px] p-[32px] justify-between items-center"
-      >
-        <div class="col-1 flex flex-col">
-          <h1
-            class="w-[393px] h-[78px] mt[58px] ml-[64px] text-[32px] leading-[38.5px] text-[#000000] font-bold"
-          >
-            Discover a World of Events Tailored Just for You.
-          </h1>
-          <button
-            class="ml-[64px] mt[65px] bg-[#783ead] rounded-[10px] text-[#FFFFFF] w-[154px] h-[44px] py-[6px] px-[24px] gap-[8px] items-center"
-          >
-            View all events
-          </button>
+      <div class="R2">
+        <div class="R2-top md:flex justify-between mx-[64px] my-[64px] h-[39px] md:w-auto">
+          <span class="text-[#000000] text-[32px]">Trending events</span>
+          <span class="h-[36px] p-[8px] gap-[4px] text-[16px]
+          leading-[18.75px] text-[#432361]">View all trending events</span>
         </div>
-        <div class="col-2 flex flex-wrap">
-          <div
-            class="bg-image bg-center bg-cover h-[240px] w-[421px] text-[#FFFFFF] p-[80px] m-[20px]"
-            style="background-image: url(./static/image-3.png)"
-          >
-            <p
-              class="w-[170px] h-[29px] ml-[50px] text-[24px] leading-[28.13px] font-bold"
-            >
-              Online Events
+        <div class="R2-bottom">
+          <div class="card w-[500px]">
+            <div class="image bg-image bg-contain h-auto" style="background-image: url(./static/col-1.jpeg);"></div>
+            <h1>ISWIS Live show</h1>
+            <p>Sun, Oct 3rd 6pm</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+              ex ea commodo consequat.
             </p>
+            <span>view details</span>
           </div>
-          <div
-            class="bg-image bg-center bg-cover h-[240px] w-[421px] text-[#FFFFFF] p-[80px] m-[20px]"
-            style="background-image: url(./static/image-1.png)"
-          >
-            <p
-              class="w-[180px] h-[29px] ml-[50px] text-[24px] leading-[28.13px] font-bold"
-            >
-              Physical Events
-            </p>
-          </div>
-          <div
-            class="bg-image bg-center bg-cover h-[240px] w-[421px] text-[#FFFFFF] p-[80px] m-[20px]"
-            style="background-image: url(./static/image-2.png)"
-          >
-            <p
-              class="w-[180px] h-[29px] ml-[50px] text-[24px] leading-[28.13px] font-bold"
-            >
-              Hybride Events
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row_4 h-[343px] w-auto bg-[#432361] text-[#FFFFFF] flex justify-between">
-        <div class="col-1 w-[340px] h-[200px] mt-[50px] ml-[64px]">
-          <h1 class="w-[186px] h-[56px] mt-[56px] ml-[64px] p-[8px] gap-[8px] text-[32px] leading-[37.5px]">rendezvous</h1>
-          <p class="w-[332px] h-[38px] mt-[12px] ml-[64px] text-[16px] leading-[18.75px] text-[#FFFFFF]">
-            Your Personal Event Sherpa: Curating Awesome, One Click at a Time.
-          </p>
-        </div>
-        <div class="col-2 flex   w-auto h-[167px] mt-[56px] ml-[54px]  text-[#FFFFFF]">
-            <div class="col-1  h-[95px] gap-[18px]">
-                <h1 class="w-[186px] h-[56px] mt-[56px] ml-[64px] p-[8px] gap-[8px] text-[32px] leading-[37.5px]">Feature
-                    </h1>
-                <p class="w-[332px] h-[38px] mt-[12px] ml-[64px] text-[16px] leading-[18.75px] text-[#FFFFFF]">
-                    Events discovery
-                    Ticketing
-                </p>
-            </div>
-            <div class="col-2  h-[95px] gap-[18px]">
-                <h1 class="w-[186px] h-[56px] mt-[56px] ml-[64px] p-[8px] gap-[8px] text-[32px] leading-[37.5px]">Company
-                    </h1>
-                <p class="w-[332px] h-[38px] mt-[12px] ml-[64px] text-[16px] leading-[18.75px] text-[#FFFFFF]">
-                    About us
-                    FAQs
-                    Careers
-                    Support
-                </p>
-            </div>
-            <div class="col-3  h-[95px] gap-[18px]">
-                <h1 class="w-[186px] h-[56px] mt-[56px] ml-[64px] p-[8px] gap-[8px] text-[32px] leading-[37.5px]">Contact us
-                  
-                <p class="w-[332px] h-[38px] mt-[12px] ml-[64px] text-[16px] leading-[18.75px] text-[#FFFFFF]">
-                    info@events.com
-                    +234 701 345 6789
-                    Race Course, 8/9 Marina, Onikan, Lagos Lagos, 4aa Force Rd, Lagos Island 102273, Lagos
-                </p>
-            </div>
         </div>
       </div>
     </div>
