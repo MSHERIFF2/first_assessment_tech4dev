@@ -578,6 +578,22 @@ video {
   right: 0px;
 }
 
+.top-\[12px\] {
+  top: 12px;
+}
+
+.m-\[12px\] {
+  margin: 12px;
+}
+
+.m-\[100px\] {
+  margin: 100px;
+}
+
+.m-\[150px\] {
+  margin: 150px;
+}
+
 .mx-\[32px\] {
   margin-left: 32px;
   margin-right: 32px;
@@ -598,8 +614,60 @@ video {
   margin-bottom: 64px;
 }
 
+.my-\[32px\] {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.mx-\[24px\] {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.my-\[12px\] {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.my-\[20px\] {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.my-\[40px\] {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.my-\[50px\] {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.mx-\[50px\] {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 .mt-\[auto\] {
   margin-top: auto;
+}
+
+.mt-\[20px\] {
+  margin-top: 20px;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
+.mb-\[100px\] {
+  margin-bottom: 100px;
 }
 
 .flex {
@@ -652,6 +720,18 @@ video {
 
 .h-\[36px\] {
   height: 36px;
+}
+
+.h-\[488px\] {
+  height: 488px;
+}
+
+.h-\[240px\] {
+  height: 240px;
+}
+
+.h-\[249px\] {
+  height: 249px;
 }
 
 .w-auto {
@@ -730,6 +810,14 @@ video {
   width: 1312px;
 }
 
+.w-\[421px\] {
+  width: 421px;
+}
+
+.w-\[420px\] {
+  width: 420px;
+}
+
 .list-none {
   list-style-type: none;
 }
@@ -754,6 +842,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -770,6 +862,14 @@ video {
   gap: 4px;
 }
 
+.gap-\[20px\] {
+  gap: 20px;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
+}
+
 .rounded-\[10px\] {
   border-radius: 10px;
 }
@@ -780,6 +880,18 @@ video {
 
 .rounded-\[30px\] {
   border-radius: 30px;
+}
+
+.rounded-tl-\[10px\] {
+  border-top-left-radius: 10px;
+}
+
+.rounded-tr-\[10px\] {
+  border-top-right-radius: 10px;
+}
+
+.border-\[1px\] {
+  border-width: 1px;
 }
 
 .bg-\[\#783EAD\] {
@@ -808,8 +920,29 @@ video {
   background-color: #FFFFFF99;
 }
 
+.bg-\[\#432361\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(67 35 97 / var(--tw-bg-opacity, 1));
+}
+
 .bg-contain {
   background-size: contain;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-\[8px\] {
@@ -818,6 +951,10 @@ video {
 
 .p-\[16px\] {
   padding: 16px;
+}
+
+.p-\[12px\] {
+  padding: 12px;
 }
 
 .px-\[24px\] {
@@ -862,6 +999,10 @@ video {
   font-size: 16px;
 }
 
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -876,6 +1017,14 @@ video {
 
 .leading-\[37\.5\] {
   line-height: 37.5;
+}
+
+.leading-\[18\2c 75px\] {
+  line-height: 18,75px;
+}
+
+.leading-\[16\.41px\] {
+  line-height: 16.41px;
 }
 
 .text-\[\#432361\] {
@@ -903,6 +1052,14 @@ video {
     position: absolute;
   }
 
+  .md\:relative {
+    position: relative;
+  }
+
+  .md\:sticky {
+    position: sticky;
+  }
+
   .md\:bottom-0 {
     bottom: 0px;
   }
@@ -925,12 +1082,33 @@ video {
     margin-bottom: 32px;
   }
 
+  .md\:mx-\[64px\] {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
   .md\:flex {
     display: flex;
   }
 
   .md\:h-\[80px\] {
     height: 80px;
+  }
+
+  .md\:h-\[640px\] {
+    height: 640px;
+  }
+
+  .md\:h-\[78px\] {
+    height: 78px;
+  }
+
+  .md\:h-\[44px\] {
+    height: 44px;
+  }
+
+  .md\:h-\[343px\] {
+    height: 343px;
   }
 
   .md\:w-\[900px\] {
@@ -949,11 +1127,47 @@ video {
     width: auto;
   }
 
+  .md\:w-\[421px\] {
+    width: 421px;
+  }
+
+  .md\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .md\:w-\[393px\] {
+    width: 393px;
+  }
+
+  .md\:w-\[154px\] {
+    width: 154px;
+  }
+
+  .md\:w-\[622px\] {
+    width: 622px;
+  }
+
+  .md\:w-\[340px\] {
+    width: 340px;
+  }
+
   .md\:justify-between {
     justify-content: space-between;
   }
 
   .md\:justify-evenly {
     justify-content: space-evenly;
+  }
+
+  .md\:bg-cover {
+    background-size: cover;
+  }
+
+  .md\:bg-center {
+    background-position: center;
+  }
+
+  .md\:leading-\[37\.5px\] {
+    line-height: 37.5px;
   }
 }

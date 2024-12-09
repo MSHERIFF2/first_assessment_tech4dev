@@ -7,8 +7,8 @@
   </head>
 
   <body>
-    <div class="w-auto h-auto flex-col">
-      <div class="R1 max-w-screen h-[640px] flex-col py-[12px]" style="background-image: url(./static/bg.png);">
+    <div class="flex-col">
+      <div class="R1  md:h-[640px]  md:bg-center flex-col p-[12px]" style="background-image: url(./static/bg.png);">
         <div class="nv bg-[#FFFFFF99] rounded-[20px]
         h-auto md:h-[80px] my-[25px] mx-[32px]  md:justify-between 
         py-[12px] px-[24px] md:flex w-auto">
@@ -33,7 +33,7 @@
         <div class="md:flex justify-between md:mx-[32px] md:my-[32px] 
         md:absolute md:bottom-0 md:right-0 md:left-0">
           <p class="text-[#FFFFFF] text-[32px]
-          leading-[37.5px] w-[500px]">Ready to Rock? Discover the Hottest Events Here – 
+          leading-[37.5px] md:w-[500px]">Ready to Rock? Discover the Hottest Events Here – 
             Your Calendar's New Best Friend!
           </p>
           <div class="bg-[#FFFFFF] text-[#4F4F4F] text-[16px]
@@ -55,24 +55,111 @@
         </div>
       </div>
       <div class="R2">
-        <div class="R2-top md:flex justify-between mx-[64px] my-[64px] h-[39px] md:w-auto">
+        <div class="R2-top md:flex justify-between md:mx-[64px] my-[64px] h-[39px] md:w-auto">
           <span class="text-[#000000] text-[32px]">Trending events</span>
           <span class="h-[36px] p-[8px] gap-[4px] text-[16px]
           leading-[18.75px] text-[#432361]">View all trending events</span>
         </div>
-        <div class="R2-bottom">
-          <div class="card w-[500px]">
-            <div class="image bg-image bg-contain h-auto" style="background-image: url(./static/col-1.jpeg);"></div>
-            <h1>ISWIS Live show</h1>
-            <p>Sun, Oct 3rd 6pm</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        <div class="R2-bottom md:flex">
+          <div class="card w-screen md:w-[421px] h-[488px] md:mx-[64px] my-[32px] rounded-[10px] border-[1px]">
+            <div class="bg-image  h-[249px]  rounded-tl-[10px]
+            rounded-tr-[10px] bg-cover md:bg-cover" style="background-image: url(./static/col-1.jpeg);"></div>
+            <h1 class="m-[12px] text-[16px] leading-[18,75px] text-[#000000] font-bold">ISWIS Live show</h1>
+            <p class="text-[14px] leading-[16.41px] text-[#000000] m-[12px]">Sun, Oct 3rd 6pm</p>
+            <p class="text-[14px] leading-[16.41px] text-[#000000] m-[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
               ex ea commodo consequat.
             </p>
-            <span>view details</span>
+            <span class="text-[14px] leading-[16.41px]  m-[12px] text-[#432361]">view details</span>
+          </div>
+          <div class="card w-screen md:w-[421px] h-[488px] md:mx-[64px] my-[32px] rounded-[10px] border-[1px]">
+            <div class="bg-image  h-[249px]  rounded-tl-[10px]
+            rounded-tr-[10px] bg-center md:bg-center" style="background-image: url(./static/col-2.jpeg);"></div>
+            <h1 class="m-[12px] text-[16px] leading-[18,75px] text-[#000000] font-bold">ISWIS Live show</h1>
+            <p class="text-[14px] leading-[16.41px] text-[#000000] m-[12px]">Sun, Oct 3rd 6pm</p>
+            <p class="text-[14px] leading-[16.41px] text-[#000000] m-[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+              ex ea commodo consequat.
+            </p>
+            <span class="text-[14px] leading-[16.41px]  m-[12px] text-[#432361]">view details</span>
+          </div>
+          <div class="card w-screen md:w-[421px] h-[488px] md:mx-[64px] my-[32px] rounded-[10px] border-[1px]">
+            <div class="bg-image  h-[249px] rounded-tl-[10px]
+            rounded-tr-[10px] bg-cover md:bg-cover" style="background-image: url(./static/col-3.jpeg);"></div>
+            <h1 class="m-[12px] text-[16px] leading-[18,75px] text-[#000000] font-bold">ISWIS Live show</h1>
+            <p class="text-[14px] leading-[16.41px] text-[#000000] m-[12px]">Sun, Oct 3rd 6pm</p>
+            <p class="text-[14px] leading-[16.41px] text-[#000000] m-[12px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+              ex ea commodo consequat.
+            </p>
+            <span class="text-[14px] leading-[16.41px]  m-[12px] text-[#432361]">view details</span>
           </div>
         </div>
+      </div>
+      <div class="R3 md:flex justify-evenly md:mx-[64px] gap-[30px]">
+        <div class="md:w-[393px] md:h-[78px] text-[32px] md:leading-[37.5px] m:mx-[64px]">
+         <h1> Discover a World of Events Tailored Just for You.</h1>
+         <button class="md:w-[154px] md:h-[44px] mx-[24px] my-[12px] gap-[8px] bg-[#783EAD] 
+         text-[16px] leading-[18.75px] text-[#FFFFFF] rounded-[10px]">view all events</button>
+
+        </div>
+        <div class="gallery md:flex flex-wrap gap-[20px] md:mx[15px]">
+          <div class="rounded-[10px] text-[#FFFFFF] w-screen md:w-[421px] h-[240px] text-center justify-center
+          items-center " style="background-image: url(./static/image-3.png);">
+          <p class="m-[150px]"> Online Events </p>
+          </div>
+          <div class="rounded-[10px] text-[#FFFFFF] w-screen md:w-[421px] h-[240px] text-center justify-center
+          items-center " style="background-image: url(./static/image-1.png);">
+          <p class="m-[150px]"> Physical Events </p>
+          </div>
+          <div class="rounded-[10px] text-[#FFFFFF] w-screen md:w-[421px] h-[240px] text-center justify-center
+          items-center " style="background-image: url(./static/image-2.png);">
+          <p class="m-[100px]"> Hybrid Events </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="R4 md:h-[343px] bg-[#432361] text-[#FFFFFF] md:flex my-[40px] md:justify-between">
+        <div class="md:w-[340px]">
+          <h1>rendezvous</h1>
+          <p>
+            Your Personal Event Sherpa: Curating Awesome, One Click at a Time.
+          </p>
+        </div>
+        <div class="md:flex md:justify-evenly md:w-[622px] my-[50px] mx-[50px]">
+          <div class="flex-col">
+            <h1>Feature</h1>
+            <p>
+              Events discovery
+              Ticketing
+            </p>
+          </div>
+          <div class="flex-col">
+            <h1>Company</h1>
+           <ul>
+            <li> About us</li>
+            <li> FAQs</li>
+            <li> 
+              Careers
+              </li>
+              <li>Support</li>
+           </ul>
+          </div>
+          <div class="flex-col">
+            <h1>Contact us </h1>
+            <ul>
+              <li>info@events.com</li>
+              <li>+234 701 345 6789</li>
+              <li>
+                Race Course, 8/9 Marina, Onikan, Lagos Lagos, 4aa Force Rd, Lagos Island 102273, Lagos
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
   </body>
