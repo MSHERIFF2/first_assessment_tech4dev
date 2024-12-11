@@ -616,6 +616,11 @@ video {
   margin-bottom: 64px;
 }
 
+.mx-\[65px\] {
+  margin-left: 65px;
+  margin-right: 65px;
+}
+
 .mt-\[15px\] {
   margin-top: 15px;
 }
@@ -690,6 +695,30 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-\[800px\] {
+  width: 800px;
+}
+
+.w-\[600px\] {
+  width: 600px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[400px\] {
+  width: 400px;
 }
 
 .list-none {
